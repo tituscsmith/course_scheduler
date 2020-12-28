@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c1e9ea232e1c299768c5b3b1bc90e8d",
+    "revision": "856c4ca2101f225b196308bbbc770132",
     "url": "/course_scheduler/index.html"
   },
   {
-    "revision": "5f17bad374c1b6e39677",
-    "url": "/course_scheduler/static/css/main.99b30c4f.chunk.css"
+    "revision": "3d40b9b88c1f553e4a7d",
+    "url": "/course_scheduler/static/css/main.2636c3a5.chunk.css"
   },
   {
     "revision": "4420f967f902c3846349",
     "url": "/course_scheduler/static/js/2.7695151f.chunk.js"
   },
   {
-    "revision": "5f17bad374c1b6e39677",
+    "revision": "3d40b9b88c1f553e4a7d",
     "url": "/course_scheduler/static/js/main.8590674b.chunk.js"
   },
   {
@@ -28,11 +28,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/course_scheduler/static/media/cloud.c84f065c.jpg"
   },
   {
-    "revision": "50cd57c3eebe86f1067ebea00e565adc",
-    "url": "/course_scheduler/static/media/lady-recommendation.50cd57c3.jpg"
-  },
-  {
     "revision": "e691947a01126a2c5c1188378bd7cb81",
     "url": "/course_scheduler/static/media/race-finish.e691947a.jpg"
+  },
+  {
+    "revision": "50cd57c3eebe86f1067ebea00e565adc",
+    "url": "/course_scheduler/static/media/recommendation.50cd57c3.jpg"
   }
 ]);
