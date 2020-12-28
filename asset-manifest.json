@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/course_scheduler/static/css/main.2636c3a5.chunk.css",
+    "main.css": "/course_scheduler/static/css/main.86a8eec1.chunk.css",
     "main.js": "/course_scheduler/static/js/main.8590674b.chunk.js",
     "main.js.map": "/course_scheduler/static/js/main.8590674b.chunk.js.map",
     "runtime~main.js": "/course_scheduler/static/js/runtime~main.383e0d94.js",
@@ -8,9 +8,9 @@
     "static/js/2.7695151f.chunk.js": "/course_scheduler/static/js/2.7695151f.chunk.js",
     "static/js/2.7695151f.chunk.js.map": "/course_scheduler/static/js/2.7695151f.chunk.js.map",
     "index.html": "/course_scheduler/index.html",
-    "precache-manifest.6749233e5ec15408a7361810a696e1fa.js": "/course_scheduler/precache-manifest.6749233e5ec15408a7361810a696e1fa.js",
+    "precache-manifest.5108a60c3e010115b53575fa2f7df709.js": "/course_scheduler/precache-manifest.5108a60c3e010115b53575fa2f7df709.js",
     "service-worker.js": "/course_scheduler/service-worker.js",
-    "static/css/main.2636c3a5.chunk.css.map": "/course_scheduler/static/css/main.2636c3a5.chunk.css.map",
-    "static/media/App.css": "/course_scheduler/static/media/recommendation.50cd57c3.jpg"
+    "static/css/main.86a8eec1.chunk.css.map": "/course_scheduler/static/css/main.86a8eec1.chunk.css.map",
+    "static/media/App.css": "/course_scheduler/static/media/recommendation.6717bc2b.jpg"
   }
 }
