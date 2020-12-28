@@ -1,46 +1,13 @@
 # Course Scheduler
-University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model and conducted usability inspection with heuristic evaluation. Features include search filtering, ratings and recommendations, prerequisite checks, and more.
+University course web application developed with ReactJS. The UI is implemented with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more.
 
-<table>
-  <tr>
-    <td>FilterCourses View</td>
-  </tr>
-  <tr>    
-      <td><img src="Screenshots/FilterCourses.PNG" width=720 height=580></td>
-</tr>
-  <tr>     
-      <td>Section View</td>
-</tr>
-  <tr>    
-      <td><img src="Screenshots/Section_View.PNG" width=720 height=580></td>
-</tr>
-  <tr>        
-      <td>Error Message</td>
-</tr>
-  <tr>        <td><img src="Screenshots/Error_Messages.PNG" width=720 height=580></td>
-  </tr>
-  <tr>
-        <td> Cart View</td>
-  </tr>
-  <tr>
-      <td><img src="Screenshots/Cart_Screen.PNG" width=720 height=580></td>
-  </tr>
-  <tr>
-     <td>RateCourses View</td>
-  </tr>
-  <tr>
-      <td><img src="Screenshots/RateCourses_Screen.PNG" width=720 height=580></td>
-  </tr>
-   <tr>
-     <td>RecommendedCourses View</td>
-  </tr>
-  <tr>
-    <td><img src="Screenshots/Recommended.PNG" width=720 height=580></td>
-  </tr>
- </table>
+# Select Image Credits
+Race Car Track: https://www.wndu.com/2020/08/21/roger-penske-to-indianapolis-500-fans-i-wanted-you-here/
+Recommendation Background: https://www.sciencemag.org/careers/2018/07/recommendations-requesting-recommendations
 
 # API
-The API is protected by a VPN, but the course data is in the following format:
+The API was protected by a VPN, but since the data is small, it has been reduced to local files:
+completed.json and course_data.json.
 
 ```
 [

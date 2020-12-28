@@ -8,6 +8,11 @@ import Sidebar from './Sidebar';
 import CourseArea from './CourseArea';
 import CompletedCourseArea from './CompletedCourseArea';
 import RecommendedCourseArea from './RecommendedCourseArea';
+import data from './course_data.json'
+import completed from './completed.json'
+import Card from 'react-bootstrap/Card'
+
+
 
 class App extends React.Component {
   constructor(props) {
@@ -145,14 +150,16 @@ toggleCart = (eventKey) => {
   }
 }
   componentDidMount() {
-    fetch('http://mysqlcs639.cs.wisc.edu:53706/api/react/classes').then(
-      res => res.json()
-    ).then(data => this.setState({allCourses: data, filteredCourses: data, subjects: this.getSubjects(data), keywords: this.setInterestAreas(data)}))
-    
-    fetch('http://mysqlcs639.cs.wisc.edu:53706/api/react/students/5022025924/classes/completed').then(
-      res => res.json()
-    ).then(data => this.setState({completedCourses: data})) ;
+    this.setState({completedCourses: completed, allCourses: data, filteredCourses: data, subjects: this.getSubjects(data), keywords: this.setInterestAreas(data)});
 
+    // fetch('http://mysqlcs639.cs.wisc.edu:53706/api/react/classes').then(
+    //   res => res.json()
+    // ).then(data => this.setState({allCourses: data, filteredCourses: data, subjects: this.getSubjects(data), keywords: this.setInterestAreas(data)}))
+    
+    // fetch('http://mysqlcs639.cs.wisc.edu:53706/api/react/students/5022025924/classes/completed').then(
+    //   res => res.json()
+    // ).then(data => this.setState({completedCourses: data})) ;
+    
   }
 
   getSubjects(data) {
@@ -250,6 +257,7 @@ toggleCart = (eventKey) => {
           </Tab>
          
         </Tabs> 
+        <Card.Footer style = {{fontSize: '1vw', justifyContent:'center'}}>Click <a style = {{fontSize: '1vw'}} href = "https://github.com/tituscsmith/course_scheduler">here</a> to see information about the app, including JSON format for the data.</Card.Footer>
       </>
     )
   }
