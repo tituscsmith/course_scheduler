@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e589815e6277618d3862490dde3007c",
+    "revision": "cf3a4c82a8aa4a0ea82925d26b6da2db",
     "url": "/course_scheduler/index.html"
   },
   {
-    "revision": "6357a7f687da02f2317c",
-    "url": "/course_scheduler/static/css/main.86a8eec1.chunk.css"
+    "revision": "5941ec90747dc9020112",
+    "url": "/course_scheduler/static/css/main.18c54c2b.chunk.css"
   },
   {
     "revision": "4420f967f902c3846349",
     "url": "/course_scheduler/static/js/2.7695151f.chunk.js"
   },
   {
-    "revision": "6357a7f687da02f2317c",
+    "revision": "5941ec90747dc9020112",
     "url": "/course_scheduler/static/js/main.8590674b.chunk.js"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/course_scheduler/static/media/cloud.c84f065c.jpg"
   },
   {
-    "revision": "e691947a01126a2c5c1188378bd7cb81",
-    "url": "/course_scheduler/static/media/race-finish.e691947a.jpg"
+    "revision": "ae2053014282dab4a752405c6993f46e",
+    "url": "/course_scheduler/static/media/race-finish.ae205301.jpg"
   },
   {
     "revision": "6717bc2bec55174f8116f6583263a17e",
