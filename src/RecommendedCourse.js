@@ -39,7 +39,7 @@ class RecommendedCourse extends React.Component {
 //onClick={console.log(this.props.data)
   render() {
     return (
-          <Card style = {{"margin": "0px 3vw 3vh", backgroundColor: "#f3f9ff"}}>
+          <Card className = "shadow" style = {{"margin": "0px 3vw 3vh", backgroundColor: "#f3f9ff"}}>
                   <Card.Body>
                     <h1>{this.props.data.name}<Button ref={this.buttonRef} style = {{"float": "right", backgroundColor: "#6fa8dc", "fontFamily": "sans-serif"}} onClick={() => this.toggleFavorite()}>Add to Favorites</Button></h1>
                     <h5>{this.props.data.number} | {this.props.data.credits} Credits</h5>

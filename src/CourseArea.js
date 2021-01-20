@@ -323,14 +323,14 @@ class CourseArea extends React.Component {
 
     //Message for Empty Cart
     if(this.props.cart.length ===0  && this.props.cartMode){
-      return <Card style = {{"margin": "0px 3vw 2vh", backgroundColor: "#f3f9ff"}}>
+      return <Card className = "shadow" style = {{"margin": "1vh 3vw 2vh", backgroundColor: "#f3f9ff"}}>
               <Card.Body>
               <h1 style = {{"textAlign": "center"}}><em>Empty Cart. <br></br>Search for classes to add to cart. </em></h1>
                 
               </Card.Body>
           </Card>
     }
-    else{return <Card style = {{"margin": "1vh 3vw 2vh", backgroundColor: "#f3f9ff"}}>
+    else{return <Card className = "shadow" style = {{"margin": "1vh 3vw 2vh", backgroundColor: "#f3f9ff"}}>
                       <Card.Body>
                         {this.getHeadMessage()}
                       <h1 style = {{"textAlign": "center"}}><strong>{formattedMode} View {this.backButton()}</strong></h1>
@@ -365,10 +365,11 @@ class CourseArea extends React.Component {
     }
   render() {
     return (
-      <div style = {{paddingBottom: '2vh'}}>
+       <div style = {{paddingBottom: '2vh', marginLeft: '20vw'}}>
       {this.getHead()}    
         {this.displaySearchMode()}
       </div>
+    
     )
   }
 }

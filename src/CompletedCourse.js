@@ -14,7 +14,7 @@ class CompletedCourse extends React.Component {
 
   render() {
     return (
-          <Card style = {{"margin": "0px 7vw 3vh", backgroundColor: "#f3f9ff"}}>
+          <Card className = "shadow" style = {{"margin": "0px 7vw 3vh", backgroundColor: "#f3f9ff"}}>
                   <Card.Body>
                     <h1>{this.props.data.name} <RateButton style = {{"float": "right"}} addRating = {(coursenumber, rating) => this.props.addRating(coursenumber, rating)}  completed = {this.props.completed} course = {this.props.data}></RateButton></h1>
                     <h5>{this.props.data.number} | {this.props.data.credits} Credits</h5>

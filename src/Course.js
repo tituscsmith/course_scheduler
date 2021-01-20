@@ -92,7 +92,7 @@ class Course extends React.Component {
   render() {
     return (//Return Name, Subject, Credits, Course Number, Course Description, Requisites, Keyboard
       //, backgroundColor: "#f3f9ff"
-          <Card style = {{"margin": "0px 3vw 3vh", backgroundColor: "#f3f9ff"}}>
+          <Card className = "shadow" style = {{"margin": "0px 3vw 3vh", backgroundColor: "#f3f9ff"}}>
               <a onClick={() => this.props.changeSearchMode("section", this.props.data, null)} style={{ cursor: "pointer"}}>
                   <Card.Body>
                     <h1>{this.props.data.name}<Button ref={this.buttonRef} style = {{"float": "right", backgroundColor: "#6fa8dc", "fontFamily": "sans-serif"}} onClick = {(event) =>this.toggleCart(event)}>{this.buttonText()}</Button></h1>

@@ -26,7 +26,7 @@ class RecommendedCourseArea extends React.Component {
 
       //Message for users to rate a course
       if(this.props.recommendedKeywords.length===0){
-        return <Card style = {{"margin": "0px 3vw 2vh", backgroundColor: "#f3f9ff"}}>
+        return <Card className = "shadow" style = {{"margin": "0px 3vw 2vh", backgroundColor: "#f3f9ff"}}>
               <Card.Body>
               <h1 style = {{"textAlign": "center"}}>No Highly Rated Courses to Recommend From!</h1>
                 <h3 style = {{"textAlign": "center"}}><em>Rate completed courses to see courses recommended for you!</em></h3>
@@ -35,7 +35,7 @@ class RecommendedCourseArea extends React.Component {
       }
       //Error message for filter mistakes
       else if (courses.length===0){
-        return <Card className = "border-danger" style = {{"margin": "0px 7vw 3vh", backgroundColor: "#fcc2c2", borderWidth: '7px'}}>
+        return <Card className = "border-danger shadow" style = {{"margin": "0px 7vw 3vh", backgroundColor: "#fcc2c2", borderWidth: '7px'}}>
               <Card.Body>
               <h1 style = {{"textAlign": "center"}}>No Recommended Courses with Matching Criteria!</h1>
                 <h3 style = {{"textAlign": "center"}}><em>Please try again with other search criteria!</em></h3>
@@ -58,7 +58,7 @@ class RecommendedCourseArea extends React.Component {
 
   render() {
     return (
-      <div style={{margin: '5px'}}>
+      <div style={{margin: '5px', marginLeft: '20vw'}}>
         {this.getCourses()}
       </div>
     )

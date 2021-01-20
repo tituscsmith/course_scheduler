@@ -218,42 +218,23 @@ toggleCart = (eventKey) => {
   render() {
     return (//'background-image':'url("classroom.png")'
       <>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossOrigin="anonymous"
-        />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"/>
         <Sidebar style = {{ 'font-family': 'Merriweather'}} setCourses={(courses) => this.setCourses(courses)} courses={this.state.allCourses} subjects={this.state.subjects} keywords = {this.state.keywords} favorites = {this.state.favorites}/>
 
-        <Tabs className = "myClass" defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{'minHeight': '3.5vh',  position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
-        <Tab title="UW Courses" disabled ></Tab>
-        <Tab className = "clouds" eventKey="search" title="Search" style={{paddingTop: '5vh', 'minHeight': '100vh'}}>
-            <div style={{marginLeft: '20vw'}}>
+        <Tabs className = "myClass" defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{'minHeight': '5vh', position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
+        <Tab title="Course Search & Enroll   " disabled ></Tab>
+        <Tab className = "clouds" eventKey="search" title="Search" style={{paddingTop: '10vh', 'minHeight': '100vh'}}>
               <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
-          </div>
           </Tab>
-
-          <Tab className = "classroom" eventKey="cart" title="Cart" style={{paddingTop: '5vh',  'minHeight': '100vh' }} >
-          <div style={{marginLeft: '20vw'}}>
-          <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
-
-          </div>
+          <Tab className = "classroom" eventKey="cart" title="Cart" style={{paddingTop: '10vh',  'minHeight': '100vh' }} >
+              <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
           </Tab>
-          <Tab className = "completed" eventKey="completed" title="Completed Courses" style={{paddingTop: '5vh', 'minHeight': '100vh'}}>
-
-              <div style={{marginLeft: '20vw'}}>
+          <Tab className = "completed" eventKey="completed" title="Completed Courses" style={{paddingTop: '11vh', 'minHeight': '100vh'}}>
               <CompletedCourseArea data={this.state.filteredCourses} allData={this.state.allCourses} addRating = {(coursenumber, rating) => this.addRating(coursenumber, rating)} completedCourses = {this.state.completedCourses}/>
-
-          </div>
           </Tab>
 
-          <Tab  className = "recommended" eventKey="recommended" title="Recommended Courses" style={{paddingTop: '5vh', 'minHeight': '100vh' }}>
-
-              <div style={{marginLeft: '20vw'}}>
+          <Tab  className = "recommended" eventKey="recommended" title="Recommended Courses" style={{paddingTop: '11vh', 'minHeight': '100vh' }}>
               <RecommendedCourseArea addFavorite = {(Course) => this.addFavorite(Course)} removeFavorite = {(Course) => this.removeFavorite(Course)} recommendedCourses = {this.state.recommendedCourses} recommendedKeywords={this.state.recommendedKeywords} data={this.state.filteredCourses} allData={this.state.allCourses} completedCourses = {this.state.completedCourses} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
-              
-          </div>
           </Tab>
          
         </Tabs> 

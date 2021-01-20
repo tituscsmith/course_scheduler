@@ -40,7 +40,7 @@ class CompletedCourseArea extends React.Component {
   
   render() {
     return (
-      <div style={{margin: '5px'}}>
+      <div style={{margin: '5px', marginLeft: '20vw'}}>
         {this.getCourses()}
       </div>
     )

@@ -57,7 +57,7 @@ class Sidebar extends React.Component {
     return (      // {this.getInterests()}
       
       <>
-        <Card style={{width: 'calc(20vw - 5px)', position: 'fixed', 'marginTop': '6vh', marginLeft: '2vw',marginRight: '2vw', backgroundColor: "#f3f9ff", 'fontFamily': 'Merriweather, sans-serif'}}>
+        <Card className = "shadow" style={{width: 'calc(19vw - 5px)', position: 'fixed', 'marginTop': '11vh', marginLeft: '2vw',marginRight: '2vw', backgroundColor: "#f3f9ff", 'fontFamily': 'Merriweather, sans-serif'}}>
           <Card.Body>
             <Card.Title style = {{'fontSize': '24px'}}>Search and Filter</Card.Title>
             <Form>
