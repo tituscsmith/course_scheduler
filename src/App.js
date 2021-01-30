@@ -218,7 +218,7 @@ toggleCart = (eventKey) => {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"/>
         <Sidebar style = {{ 'font-family': 'Merriweather'}} setCourses={(courses) => this.setCourses(courses)} courses={this.state.allCourses} subjects={this.state.subjects} keywords = {this.state.keywords} favorites = {this.state.favorites}/>
 
-        <Tabs className  defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{'minHeight': '5vh', position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
+        <Tabs className  defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{'minHeight': '5vw', position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
         <Tab className title="Course Search & Enroll" disabled ></Tab>
           <Tab className = "classroom" eventKey="cart" title="Cart" style={{paddingTop: '10vh',  'minHeight': '100vh' }} >
               <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>

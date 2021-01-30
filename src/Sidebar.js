@@ -59,7 +59,7 @@ class Sidebar extends React.Component {
       <>
         <Card className = "shadow" style={{width: 'calc(19vw - 5px)', position: 'fixed', 'marginTop': '11vh', marginLeft: '2vw',marginRight: '2vw', backgroundColor: "#f3f9ff", 'fontFamily': 'Merriweather, sans-serif'}}>
           <Card.Body>
-            <Card.Title style = {{'fontSize': '24px'}}>Search and Filter</Card.Title>
+            <Card.Title style = {{'fontSize': '24px'}}>Filter Courses!</Card.Title>
             <Form>
               <Form.Group controlId="formKeywords" onChange={() => this.setCourses()} style={{width: '100%'}}>
                 <Form.Label>Search</Form.Label>
@@ -86,7 +86,7 @@ class Sidebar extends React.Component {
                   <Form.Control type="number"  min = "1" max = "12" autoComplete="off" ref={this.minimumCredits}/>
                 </Form.Group>
                 <div style={{marginLeft: '5px', marginRight: '5px', marginTop: '38px', 'fontFamily': 'Merriweather, sans-serif'}}>to</div>
-                <Form.Group controlId="maximumCredits" style={{marginTop: '27px', 'width': '3vw'}} onChange={() => this.setCourses()} onKeyDown={(e) => this.handleCreditsKeyDown(e)}>
+                <Form.Group controlId="maximumCredits" style={{marginTop: '34px', 'width': '3vw'}} onChange={() => this.setCourses()} onKeyDown={(e) => this.handleCreditsKeyDown(e)}>
                   <Form.Control type="number" min="1" max = "12" autoComplete="off" ref={this.maximumCredits}/>
                 </Form.Group>
                 
