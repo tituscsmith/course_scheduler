@@ -218,24 +218,24 @@ toggleCart = (eventKey) => {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"/>
         <Sidebar style = {{ 'font-family': 'Merriweather'}} setCourses={(courses) => this.setCourses(courses)} courses={this.state.allCourses} subjects={this.state.subjects} keywords = {this.state.keywords} favorites = {this.state.favorites}/>
 
-        <Tabs className  defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{'minHeight': '5vw', position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
+        <Tabs className  defaultActiveKey="search" onSelect={(k) => this.toggleCart(k)}  style={{position: 'fixed', zIndex: 1,  width: '100%', backgroundColor: "#f3f9ff"}}>
         <Tab className title="Course Search & Enroll" disabled ></Tab>
-          <Tab className = "classroom" eventKey="cart" title="Cart" style={{paddingTop: '10vh',  'minHeight': '100vh' }} >
+        <Tab className = "tab" eventKey="search" title="Search">
               <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
           </Tab>
-          <Tab className = "clouds" eventKey="search" title="Search" style={{paddingTop: '10vh', 'minHeight': '100vh'}}>
+          <Tab className = "tab" eventKey="cart" title="Cart" >
               <CourseArea data={this.state.filteredCourses} completedCourses = {this.state.completedCourses} changeSearchMode = {(String, Course, Subsection) => this.changeSearchMode(String, Course, Subsection)} searchMode = {this.state.searchMode} currentCourse = {this.state.currentCourse} currentSection = {this.state.currentSection} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
           </Tab>
-          <Tab className = "completed" eventKey="completed" title="Completed Courses" style={{paddingTop: '11vh', 'minHeight': '100vh'}}>
+          <Tab className = "tab" eventKey="completed" title="Completed Courses">
               <CompletedCourseArea data={this.state.filteredCourses} allData={this.state.allCourses} addRating = {(coursenumber, rating) => this.addRating(coursenumber, rating)} completedCourses = {this.state.completedCourses}/>
           </Tab>
 
-          <Tab  className = "recommended" eventKey="recommended" title="Recommended Courses" style={{paddingTop: '11vh', 'minHeight': '100vh' }}>
+          <Tab  className = "tab" eventKey="recommended" title="Recommended Courses">
               <RecommendedCourseArea addFavorite = {(Course) => this.addFavorite(Course)} removeFavorite = {(Course) => this.removeFavorite(Course)} recommendedCourses = {this.state.recommendedCourses} recommendedKeywords={this.state.recommendedKeywords} data={this.state.filteredCourses} allData={this.state.allCourses} completedCourses = {this.state.completedCourses} cart = {this.state.cart} removeFromCart={(Course) => this.removeFromCart(Course)} addToCart={(Course) => this.addToCart(Course)} allData={this.state.allCourses} cartMode={this.state.cartMode}/>
           </Tab>
          
         </Tabs> 
-        <Card.Footer style = {{fontSize: '1vw', justifyContent:'center'}}>Click <a style = {{fontSize: '1vw'}} href = "https://github.com/tituscsmith/course_scheduler">here</a> to see information about the app, including JSON format for the data.</Card.Footer>
+        <Card.Footer><h4 style = {{textAlign: 'center'}}>Click <a href = "https://github.com/tituscsmith/course_scheduler">here</a> to see information about the app, including JSON format for the data<br /><br /> Developed by Titus Smith for CS639 | Fall 2020</h4></Card.Footer>
       </>
     )
   }
